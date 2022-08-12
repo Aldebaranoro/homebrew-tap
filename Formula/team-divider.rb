@@ -10,7 +10,7 @@ class TeamDivider < Formula
 
   on_macos do
     url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.1/team-divider_1.2.1_macOS_amd64.tar.gz"
-    sha256 "5166ac3e8a3bc9e5679d867e21145c166dc269fa083a1d08372379aac5efda3f"
+    sha256 "effa550d8b95013fe7cb786c71028bc3f4eadb5ad713a23818fa9a2a7aaeb665"
 
     def install
       bin.install "bin/team-divider"
@@ -30,7 +30,7 @@ class TeamDivider < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.1/team-divider_1.2.1_linux_amd64.tar.gz"
-      sha256 "be1167c53efe8e89acb71de8b2f398ec1f0aa3d4d5a2fe2fd2855528a9d0f732"
+      sha256 "ca39835159e188ce24cfb0a88b78658987cac6ad37f8247a6cfedc953651f3e4"
 
       def install
         bin.install "bin/team-divider"
@@ -38,7 +38,7 @@ class TeamDivider < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.1/team-divider_1.2.1_linux_arm64.tar.gz"
-      sha256 "9aae40fd5ce3b078e907c8c213d2169bcc00677430f8df621b76d8f6181d4cf9"
+      sha256 "8d198b2dfc98a4bda0034b598dd37d2bbfa4447b968896ad9eb166e0cfc7392e"
 
       def install
         bin.install "bin/team-divider"
@@ -46,7 +46,7 @@ class TeamDivider < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.1/team-divider_1.2.1_linux_armv6.tar.gz"
-      sha256 "3777e47a394371fdb33fd6d971c4bc31f3c27fefd30731d53b756b0ac4112fbe"
+      sha256 "a162bd250c60b22c838ee4e475bbe04849f6e2090ba784e8e2af9e47cd01d21e"
 
       def install
         bin.install "bin/team-divider"
