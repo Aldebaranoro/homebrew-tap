@@ -5,12 +5,12 @@
 class TeamDivider < Formula
   desc "Command line tool for randomly dividing people into teams"
   homepage "https://github.com/Aldebaranoro/team-divider"
-  version "1.2.1"
+  version "1.2.3"
   license "MIT"
 
   on_macos do
-    url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.1/team-divider_1.2.1_macOS_amd64.tar.gz"
-    sha256 "effa550d8b95013fe7cb786c71028bc3f4eadb5ad713a23818fa9a2a7aaeb665"
+    url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.3/team-divider_1.2.3_macOS_amd64.tar.gz"
+    sha256 "764a2d96cf693edd74ad8d28c24c1ba8e4029a851321981341dd48e29d999be3"
 
     def install
       bin.install "bin/team-divider"
@@ -29,24 +29,24 @@ class TeamDivider < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.1/team-divider_1.2.1_linux_amd64.tar.gz"
-      sha256 "ca39835159e188ce24cfb0a88b78658987cac6ad37f8247a6cfedc953651f3e4"
+      url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.3/team-divider_1.2.3_linux_amd64.tar.gz"
+      sha256 "adfe633bd620264067e3f368d28f3d693f2e178f89f47be45e9d0303ac3a1119"
 
       def install
         bin.install "bin/team-divider"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.1/team-divider_1.2.1_linux_arm64.tar.gz"
-      sha256 "8d198b2dfc98a4bda0034b598dd37d2bbfa4447b968896ad9eb166e0cfc7392e"
+      url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.3/team-divider_1.2.3_linux_arm64.tar.gz"
+      sha256 "66946470a5950a5527aeba365e64eba1e4cf2f5d39e42b84efa21fa5059abcc7"
 
       def install
         bin.install "bin/team-divider"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.1/team-divider_1.2.1_linux_armv6.tar.gz"
-      sha256 "a162bd250c60b22c838ee4e475bbe04849f6e2090ba784e8e2af9e47cd01d21e"
+      url "https://github.com/Aldebaranoro/team-divider/releases/download/v1.2.3/team-divider_1.2.3_linux_armv6.tar.gz"
+      sha256 "61705fad01eed86b389c7897359208ae0896f5dfed619221bd16f9f4ccf5992b"
 
       def install
         bin.install "bin/team-divider"
